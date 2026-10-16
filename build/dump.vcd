@@ -1,0 +1,70 @@
+$date
+	Thu Oct 15 20:03:35 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module Register8_tb $end
+$var wire 8 ! out [7:0] $end
+$var reg 1 " clk $end
+$var reg 8 # a [7:0] $end
+$scope module regi $end
+$var wire 1 " clock $end
+$var wire 8 $ data [7:0] $end
+$var reg 8 % out [7:0] $end
+$scope begin Reg $end
+$upscope $end
+$upscope $end
+$scope task test $end
+$var reg 8 & value [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1 &
+bx %
+b1 $
+b1 #
+x"
+b0 !
+$end
+#1
+b1 !
+b1 %
+1"
+#2
+b10 #
+b10 $
+b10 &
+0"
+#3
+b10 !
+b10 %
+1"
+#4
+b11 #
+b11 $
+b11 &
+0"
+#5
+b11 !
+b11 %
+1"
+#6
+b110010 #
+b110010 $
+b110010 &
+0"
+#7
+b110010 !
+b110010 %
+1"
+#8
+0"

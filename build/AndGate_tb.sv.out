@@ -1,0 +1,49 @@
+#! /usr/bin/vvp
+:ivl_version "13.0 (stable)" "(v13_0)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib64/ivl/system.vpi";
+:vpi_module "/usr/lib64/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib64/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib64/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib64/ivl/va_math.vpi";
+:vpi_module "/usr/lib64/ivl/v2009.vpi";
+S_0x55924a67b550 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_0x55924a67b6e0 .scope module, "AndGate_tb" "AndGate_tb" 3 1;
+ .timescale 0 0;
+v0x55924a6c81d0_0 .var "a", 7 0;
+v0x55924a6c8290_0 .var "b", 7 0;
+v0x55924a6c8330_0 .var/i "fd", 31 0;
+v0x55924a6c8400_0 .net "out", 7 0, L_0x55924a6c84f0;  1 drivers
+S_0x55924a67b870 .scope module, "andGate" "And8" 3 3, 4 1 0, S_0x55924a67b6e0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 8 "a";
+    .port_info 1 /INPUT 8 "b";
+    .port_info 2 /OUTPUT 8 "out";
+L_0x55924a6c84f0 .functor AND 8, v0x55924a6c81d0_0, v0x55924a6c8290_0, C4<11111111>, C4<11111111>;
+v0x55924a6a5560_0 .net "a", 7 0, v0x55924a6c81d0_0;  1 drivers
+v0x55924a6c7fb0_0 .net "b", 7 0, v0x55924a6c8290_0;  1 drivers
+v0x55924a6c8090_0 .net "out", 7 0, L_0x55924a6c84f0;  alias, 1 drivers
+    .scope S_0x55924a67b6e0;
+T_0 ;
+    %vpi_func 3 7 "$fopen" 32, "/home/shaun/Documents/GitHub/Computa/sim/output.txt" {0 0 0};
+    %store/vec4 v0x55924a6c8330_0, 0, 32;
+    %vpi_call/w 3 8 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x55924a67b6e0 {0 0 0};
+    %pushi/vec4 204, 0, 8;
+    %store/vec4 v0x55924a6c81d0_0, 0, 8;
+    %pushi/vec4 170, 0, 8;
+    %store/vec4 v0x55924a6c8290_0, 0, 8;
+    %delay 10, 0;
+    %vpi_call/w 3 12 "$fdisplay", v0x55924a6c8330_0, "a: %b, b: %b, output: %b", v0x55924a6c81d0_0, v0x55924a6c8290_0, v0x55924a6c8400_0 {0 0 0};
+    %vpi_call/w 3 13 "$fclose", v0x55924a6c8330_0 {0 0 0};
+    %vpi_call/w 3 14 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "-";
+    "tb/AndGate_tb.sv";
+    "rtl/And8.sv";
