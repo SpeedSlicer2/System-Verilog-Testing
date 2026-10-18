@@ -1,4 +1,30 @@
-a: 00000000, b: 11111111, output: 00000000
-a: 00000000, b: 11111111, output: 11111111
-a: 11010100, b: 01100011, output: 11010100
-a: 11010100, b: 01100011, output: 01100011
+in: 0000000000000000, inc: x, load: 0, reset: 0, clk: 1, out: 0000000000000000
+in: 0000000000000000, inc: x, load: 0, reset: 0, clk: 0, out: 0000000000000000
+in: 0000000000000001, inc: x, load: 0, reset: 0, clk: 1, out: 0000000000000000
+in: 0000000000000001, inc: x, load: 0, reset: 0, clk: 0, out: 0000000000000000
+in: 1000001010000101, inc: x, load: 0, reset: 0, clk: 1, out: 0000000000000000
+in: 1000001010000101, inc: x, load: 0, reset: 0, clk: 0, out: 0000000000000000
+in: 1000001010000101, inc: x, load: 1, reset: 0, clk: 1, out: 0000000000000000
+in: 1000001010000101, inc: x, load: 1, reset: 0, clk: 0, out: 1000001010000101
+in: 1000001010000101, inc: x, load: 0, reset: 0, clk: 1, out: 1000001010000101
+in: 1000001010000101, inc: x, load: 0, reset: 0, clk: 0, out: 1000001010000101
+in: 1000001010000101, inc: x, load: 0, reset: 0, clk: 1, out: 1000001010000101
+in: 1000001010000101, inc: x, load: 0, reset: 0, clk: 0, out: 1000001010000101
+in: 0000000000000000, inc: x, load: 1, reset: 0, clk: 1, out: 1000001010000101
+in: 0000000000000000, inc: x, load: 1, reset: 0, clk: 0, out: 0000000000000000
+in: 0000000000000000, inc: x, load: 1, reset: 1, clk: 1, out: 0000000000000000
+in: 0000000000000000, inc: x, load: 1, reset: 1, clk: 0, out: 0000000000000000
+in: 0000000000000001, inc: x, load: 1, reset: 0, clk: 1, out: 0000000000000000
+in: 0000000000000001, inc: x, load: 1, reset: 0, clk: 0, out: 0000000000000001
+in: 0000000000000001, inc: x, load: 1, reset: 1, clk: 1, out: 0000000000000001
+in: 0000000000000001, inc: x, load: 1, reset: 1, clk: 0, out: 0000000000000000
+in: 0000000000000001, inc: x, load: 0, reset: 0, clk: 1, out: 0000000000000000
+in: 0000000000000001, inc: x, load: 0, reset: 0, clk: 0, out: 0000000000000000
+in: 0000000000000001, inc: x, load: 0, reset: 1, clk: 1, out: 0000000000000000
+in: 0000000000000001, inc: x, load: 0, reset: 1, clk: 0, out: 0000000000000000
+in: 0000000000000000, inc: x, load: 1, reset: 0, clk: 1, out: 0000000000000000
+in: 0000000000000000, inc: x, load: 1, reset: 0, clk: 0, out: 0000000000000000
+in: 0000000000000001, inc: x, load: 0, reset: 0, clk: 1, out: 0000000000000000
+in: 0000000000000001, inc: x, load: 0, reset: 0, clk: 0, out: 0000000000000000
+in: 0000000000000000, inc: x, load: 0, reset: 1, clk: 1, out: 0000000000000000
+in: 0000000000000000, inc: x, load: 0, reset: 1, clk: 0, out: 0000000000000000

@@ -1,6 +1,6 @@
 # System Verilog Testing
 > what is System Verilog Testing?
-It is Shaun's Learning Repository for System Verilog. The goal is to eventually create the Hack CPU in this repo.
+It is Shaun's Learning Repository for System Verilog. The goal is to eventually create the Hack Computer in this repo.
 
 References:
 
@@ -10,3 +10,11 @@ References:
 [https://www.nand2tetris.org/](https://www.nand2tetris.org/)
 
 Along with misc SystemVerilog documentation
+
+
+# Hack Computer modules completed:
+[x] PC
+[x] Registers
+[X] ALU
+[] ROM
+[] RAM
