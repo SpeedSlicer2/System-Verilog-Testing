@@ -11,10 +11,3 @@ References:
 
 Along with misc SystemVerilog documentation
 
-
-# Hack Computer modules completed:
-[x] PC
-[x] Registers
-[X] ALU
-[] ROM
-[] RAM
