@@ -4,7 +4,7 @@ module Register16
      input logic clk,
      output logic [15:0] out);
      logic [15:0] block = 16'h0000;
-    always_ff @(negedge clk) begin 
+    always_ff @(posedge clk) begin 
         if (load) begin
             block <= in;
         end
